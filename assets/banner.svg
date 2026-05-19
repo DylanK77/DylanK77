@@ -1,0 +1,111 @@
+<svg width="1400" height="420" viewBox="0 0 1400 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DylanK77 cyberpunk GitHub profile banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050505"/>
+      <stop offset="0.42" stop-color="#07131b"/>
+      <stop offset="0.7" stop-color="#16082b"/>
+      <stop offset="1" stop-color="#001c26"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="180" y1="0" x2="1220" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00e5ff"/>
+      <stop offset="0.5" stop-color="#8a2be2"/>
+      <stop offset="1" stop-color="#39ff14"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" stroke="#163441" stroke-width="1" opacity="0.45"/>
+    </pattern>
+    <pattern id="hex" width="84" height="72" patternUnits="userSpaceOnUse">
+      <path d="M21 2L63 2L82 36L63 70L21 70L2 36Z" stroke="#00e5ff" stroke-width="1" opacity="0.13"/>
+    </pattern>
+    <clipPath id="terminalClip">
+      <rect x="78" y="86" width="455" height="238" rx="18"/>
+    </clipPath>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+      .scan { animation: scan 3.8s linear infinite; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; }
+      .float { animation: float 5.5s ease-in-out infinite; }
+      .glitchA { animation: glitchA 3.2s steps(1,end) infinite; }
+      .glitchB { animation: glitchB 2.7s steps(1,end) infinite; }
+      @keyframes scan { 0% { transform: translateY(-250px); opacity: 0; } 12% { opacity: .7; } 90% { opacity: .2; } 100% { transform: translateY(250px); opacity: 0; } }
+      @keyframes pulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+      @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+      @keyframes glitchA { 0%,91%,100% { transform: translate(0,0); opacity: .9; } 92% { transform: translate(8px,-2px); opacity: .7; } 94% { transform: translate(-6px,3px); opacity: .8; } }
+      @keyframes glitchB { 0%,88%,100% { transform: translate(0,0); opacity: .55; } 89% { transform: translate(-10px,2px); opacity: .75; } 91% { transform: translate(7px,-3px); opacity: .6; } }
+    </style>
+  </defs>
+
+  <rect width="1400" height="420" fill="url(#bg)"/>
+  <rect width="1400" height="420" fill="url(#grid)"/>
+  <rect width="1400" height="420" fill="url(#hex)"/>
+  <path d="M0 326C190 254 312 354 502 281C727 195 809 271 1030 184C1198 118 1274 128 1400 76" stroke="url(#neon)" stroke-width="2" opacity="0.5" filter="url(#glow)"/>
+  <path d="M0 382H1400" stroke="#00e5ff" stroke-width="2" opacity="0.45" filter="url(#glow)"/>
+
+  <g opacity="0.25">
+    <path d="M0 420L228 260L426 420H0Z" fill="#00e5ff"/>
+    <path d="M348 420L628 214L914 420H348Z" fill="#8a2be2"/>
+    <path d="M795 420L1080 185L1400 420H795Z" fill="#39ff14"/>
+  </g>
+  <g opacity="0.42" stroke="#00e5ff">
+    <path d="M226 260L348 420M628 214L795 420M1080 185L914 420"/>
+    <path d="M426 420L628 214L1080 185L1400 420"/>
+  </g>
+
+  <g class="float" filter="url(#softGlow)">
+    <circle cx="1118" cy="95" r="4" fill="#39ff14"/>
+    <circle cx="1194" cy="136" r="4" fill="#00e5ff"/>
+    <circle cx="1255" cy="86" r="4" fill="#8a2be2"/>
+    <circle cx="1320" cy="156" r="4" fill="#39ff14"/>
+    <path d="M1118 95L1194 136L1255 86L1320 156L1194 136" stroke="url(#neon)" stroke-width="2"/>
+  </g>
+
+  <g>
+    <rect x="78" y="86" width="455" height="238" rx="18" fill="#050505" stroke="#00e5ff" stroke-width="1.5" opacity="0.92"/>
+    <rect x="78" y="86" width="455" height="38" rx="18" fill="#08131a"/>
+    <circle cx="105" cy="105" r="5" fill="#ff005d"/>
+    <circle cx="124" cy="105" r="5" fill="#f9d423"/>
+    <circle cx="143" cy="105" r="5" fill="#39ff14"/>
+    <g clip-path="url(#terminalClip)">
+      <rect class="scan" x="78" y="86" width="455" height="70" fill="url(#neon)" opacity="0.13"/>
+      <text x="104" y="156" class="mono" font-size="16" fill="#39ff14">dylan@lab:~$ ./observe --target internet</text>
+      <text x="104" y="186" class="mono" font-size="15" fill="#d7faff">[+] honeypot sensors online</text>
+      <text x="104" y="214" class="mono" font-size="15" fill="#d7faff">[+] packet capture initialized</text>
+      <text x="104" y="242" class="mono" font-size="15" fill="#00e5ff">[+] malware lab isolated</text>
+      <text x="104" y="270" class="mono" font-size="15" fill="#8a2be2">[+] automation pipeline armed</text>
+      <text x="104" y="298" class="mono" font-size="15" fill="#39ff14">status: ONLINE</text>
+    </g>
+  </g>
+
+  <g filter="url(#glow)">
+    <text x="590" y="160" class="mono glitchB" font-size="22" fill="#8a2be2">DylanK77</text>
+    <text x="594" y="160" class="mono glitchA" font-size="22" fill="#00e5ff">DylanK77</text>
+    <text x="590" y="224" class="mono" font-size="64" font-weight="800" fill="#e6fbff">DYLAN KLEIN</text>
+    <text x="592" y="262" class="mono" font-size="20" fill="#00e5ff">Cybersecurity Student | Offensive Security &amp; Honeypot Builder</text>
+    <text x="592" y="302" class="mono" font-size="16" fill="#d7faff">Observe. Detect. Automate. Exploit. Harden.</text>
+  </g>
+
+  <g class="pulse" opacity="0.85">
+    <rect x="590" y="322" width="108" height="34" rx="8" fill="#07131a" stroke="#00e5ff"/>
+    <text x="614" y="344" class="mono" font-size="13" fill="#00e5ff">GO</text>
+    <rect x="710" y="322" width="108" height="34" rx="8" fill="#07131a" stroke="#8a2be2"/>
+    <text x="736" y="344" class="mono" font-size="13" fill="#d7faff">RUST</text>
+    <rect x="830" y="322" width="124" height="34" rx="8" fill="#07131a" stroke="#39ff14"/>
+    <text x="855" y="344" class="mono" font-size="13" fill="#39ff14">PYTHON</text>
+    <rect x="966" y="322" width="154" height="34" rx="8" fill="#07131a" stroke="#00e5ff"/>
+    <text x="994" y="344" class="mono" font-size="13" fill="#d7faff">TYPESCRIPT</text>
+  </g>
+</svg>

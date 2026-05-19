@@ -1,0 +1,31 @@
+<svg width="1400" height="260" viewBox="0 0 1400 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cyber grid background">
+  <defs>
+    <linearGradient id="fade" x1="700" y1="0" x2="700" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050505"/>
+      <stop offset="0.4" stop-color="#07131a"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="130" x2="1400" y2="130">
+      <stop stop-color="#00e5ff"/>
+      <stop offset="0.5" stop-color="#8a2be2"/>
+      <stop offset="1" stop-color="#39ff14"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .flow { stroke-dasharray: 22 18; animation: flow 5s linear infinite; }
+      @keyframes flow { to { stroke-dashoffset: -80; } }
+    </style>
+  </defs>
+  <rect width="1400" height="260" fill="url(#fade)"/>
+  <g opacity="0.35" stroke="#173847">
+    <path d="M0 220H1400M0 180H1400M0 140H1400M0 100H1400M0 60H1400"/>
+    <path d="M100 260L520 0M300 260L620 0M500 260L720 0M700 260V0M900 260L680 0M1100 260L780 0M1300 260L880 0"/>
+  </g>
+  <path class="flow" d="M90 190C250 78 396 246 554 132C700 27 824 225 980 112C1138 -2 1230 176 1310 76" stroke="url(#neon)" stroke-width="3" filter="url(#glow)"/>
+  <g filter="url(#glow)">
+    <circle cx="250" cy="91" r="5" fill="#00e5ff"/>
+    <circle cx="554" cy="132" r="5" fill="#39ff14"/>
+    <circle cx="980" cy="112" r="5" fill="#8a2be2"/>
+    <circle cx="1310" cy="76" r="5" fill="#00e5ff"/>
+  </g>
+</svg>

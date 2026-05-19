@@ -1,0 +1,25 @@
+<svg width="1400" height="72" viewBox="0 0 1400 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Neon cyber divider">
+  <defs>
+    <linearGradient id="line" x1="0" y1="36" x2="1400" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050505"/>
+      <stop offset="0.18" stop-color="#00e5ff"/>
+      <stop offset="0.5" stop-color="#8a2be2"/>
+      <stop offset="0.82" stop-color="#39ff14"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-200%" width="120%" height="500%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .dash { stroke-dasharray: 70 32; animation: move 6s linear infinite; }
+      @keyframes move { to { stroke-dashoffset: -204; } }
+    </style>
+  </defs>
+  <rect width="1400" height="72" fill="#050505"/>
+  <path class="dash" d="M76 36H1324" stroke="url(#line)" stroke-width="3" filter="url(#glow)"/>
+  <path d="M596 18H804L834 36L804 54H596L566 36L596 18Z" fill="#07131a" stroke="#00e5ff" opacity="0.92"/>
+  <circle cx="644" cy="36" r="4" fill="#39ff14"/>
+  <circle cx="700" cy="36" r="4" fill="#00e5ff"/>
+  <circle cx="756" cy="36" r="4" fill="#8a2be2"/>
+</svg>
